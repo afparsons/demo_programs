@@ -1,0 +1,45 @@
+main:	add   $at, $v1, $v0
+		addu  $a1, $a0, $zero
+		sub   $a2, $a3, $t0
+		subu  $t1, $t2, $t3
+		and   $t4, $t5, $t6
+		or    $t7, $s0, $s1
+		nor   $s2, $s3, $s4
+		sll   $s2, $s3, 10	# test 1 2 3
+		srl   $s4, $s5, 10
+		slt   $s6, $t8, $s7
+		sltu  $t9, $k1, $k0	# hello!
+		jr    $ra
+		addi  $gp, $sp, 100
+		addiu $at, $v0, 100
+		andi  $at, $fp, 100
+		ori   $at, $v0, 100
+		lw    $at, 100 ($v0)
+		sw    $at, 100 ($v0)
+		ori   $at, $zero, 100
+		beq   $at, $v0, loop
+		bne   $at, $v0, unfound
+		beq	  $at, $v1, loop2
+		slti  $at, $v0, 100
+		sltiu $at, $v0, 100
+		j     start
+		jal   finish
+		subu  $at, $v1, $v0
+		sll   $zero, $zero, 0
+		# this is when a line begins with a comment
+start:	lui  $t1, 100
+		addi $t0, $s2, -999
+loop:	slt $t2, $a0, $t1         # top of loop
+        bne $t2, $zero, finish
+        add $t0, $t0, $t1
+        addi $t1, $t1, 2
+        j loop                    # bottom of loop
+finish: add $v0, $t0, $zero
+broken:	add   $at, $v6, $v0		# invalid register (v6 does not exist)
+		kcl   $at, $v1, $v0				# invalid MIP (kcl is not an operation)
+		subu  $t3, $s0, 17				# ok
+		addi  $t1, $t2, $t3 			# i format with a register
+		addi $t6, $s5, 100000000000000 # when immediate is too large
+		addi $t2   								# when too few tokens
+		subi $t4, $s3, 100, 200 	# too many tokens
+		j 100											# expects label, gets decimal

@@ -1,0 +1,9 @@
+GREEDY-ALGORITHM(Values[], Weights[], Capacity)
+1	if Values[].length = 0
+2		return 0
+3	sort KnapsackItems[]
+4	for KnapsackItems[].length to 0
+5		if KnapsackItem.weight <= remainingCapacity
+6			valueTaken = valueTaken + KnapsackItem.value
+7			remainingCapacity = remainingCapacity - KnapsackItem.weight
+8	return valueTaken

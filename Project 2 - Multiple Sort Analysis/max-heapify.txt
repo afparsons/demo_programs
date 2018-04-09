@@ -1,0 +1,11 @@
+MAX-HEAPIFY(A,i)
+1	l = left(i)
+2	r = right(i)
+3	if l <= A.heapsize and A[l] > A[i]
+4		largest = l
+5	else largest = i
+6	if r <= A.heap-size and A[r] > A[largest]
+7		largest = r
+8	if largest != i
+9		exchange A[i] with A[largest]
+10		MAX-HEAPIFY(A,largest)

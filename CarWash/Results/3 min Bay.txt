@@ -1,0 +1,49 @@
+Squeaky Clean Car Wash -- Open 09:00 through 19:00 -- 1 bay / 3 minutes
+################################################################################
+
+MONDAY
+--------------------------------------------------------------------------------
+Bay Wash Time: 3  |  Total Num Cars: 145.0  |  Total Waiting Time: 203.0 minutes
+Average Wait Time: 1.4 minutes  |  Number of Cars Waiting 10+ minutes: 0 car(s)
+________________________________________________________________________________
+
+TUESDAY
+--------------------------------------------------------------------------------
+Bay Wash Time: 3  |  Total Num Cars: 158.0  |  Total Waiting Time: 481.0 minutes
+Average Wait Time: 3.04 minutes  |  Number of Cars Waiting 10+ minutes: 3 car(s)
+________________________________________________________________________________
+
+WEDNESDAY
+--------------------------------------------------------------------------------
+Bay Wash Time: 3  |  Total Num Cars: 142.0  |  Total Waiting Time: 217.0 minutes
+Average Wait Time: 1.53 minutes  |  Number of Cars Waiting 10+ minutes: 0 car(s)
+________________________________________________________________________________
+
+THURSDAY
+--------------------------------------------------------------------------------
+Bay Wash Time: 3  |  Total Num Cars: 141.0  |  Total Waiting Time: 187.0 minutes
+Average Wait Time: 1.33 minutes  |  Number of Cars Waiting 10+ minutes: 0 car(s)
+________________________________________________________________________________
+
+FRIDAY
+--------------------------------------------------------------------------------
+Bay Wash Time: 3  |  Total Num Cars: 157.0  |  Total Waiting Time: 388.0 minutes
+Average Wait Time: 2.47 minutes  |  Number of Cars Waiting 10+ minutes: 1 car(s)
+________________________________________________________________________________
+
+SATURDAY
+--------------------------------------------------------------------------------
+Bay Wash Time: 3  |  Total Num Cars: 162.0  |  Total Waiting Time: 619.0 minutes
+Average Wait Time: 3.82 minutes  |  Number of Cars Waiting 10+ minutes: 13 car(s)
+________________________________________________________________________________
+
+SUNDAY
+--------------------------------------------------------------------------------
+Bay Wash Time: 3  |  Total Num Cars: 157.0  |  Total Waiting Time: 368.0 minutes
+Average Wait Time: 2.34 minutes  |  Number of Cars Waiting 10+ minutes: 3 car(s)
+________________________________________________________________________________
+
+################################################################################
+Squeaky Clean Car Wash: Average Waiting Time only 2.28 minutes w/ one 3 min bay!
+
+Process finished with exit code 0

@@ -1,0 +1,6 @@
+MERGE-SORT(A,p,r)
+1	if p < r
+2		q = floor((p+r)/2)
+3		MERGE-SORT(A,p,q)
+4		MERGE-SORT(A,q+1,r)
+5		MERGE-SORT(A,p,q,r)

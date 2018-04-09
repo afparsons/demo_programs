@@ -1,0 +1,13 @@
+DYNAMIC-ALGORITHM(Values[], Weights[], Capacity)
+1	if Values.length = 0
+2		return 0
+3	return HELPER(0, Capacity)
+
+HELPER(i, Capacity)
+1	if i = numberOfObjects
+2		if Capacity < Weights[numberOfObjects]
+3			return 0
+4		return Values[numberOfObjects]
+5	if Capacity < Weights[i]
+6		return HELPER(i+1, Capacity)
+7	return MAX(HELPER(i+1, Capacity), HELPER(i+1, Capacity-Weights[i]) + Values[i])

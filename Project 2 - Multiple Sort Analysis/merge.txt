@@ -1,0 +1,18 @@
+MERGE(A,p,q,r)
+1	n = q - p + 1
+2	m = r - q
+3 	let L[1...n+1] and R[1...m+1] be new arrays
+4	for i = 1 to n
+5		L[i] = A[p+i-1]
+6	for j = 1 to m
+7		R[j] = A[q+j]
+8	L[n+1] = INFINITY
+9	R[m+1] = INFINITY
+10	i = 1
+11	j = 1
+12	for k = p to r
+13		if L[i] <= R[j]
+14			A[k] = L[i]
+15			i = i + 1
+16		else A[k] = R[j]
+17			j = j + 1

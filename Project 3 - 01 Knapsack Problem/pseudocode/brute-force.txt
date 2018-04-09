@@ -1,0 +1,18 @@
+BRUTE-FORCE(Weights[], Values[], A[])
+1	for i to 2^n do
+2		j = n
+3		tempWeight = 0
+4		tempValue = 0
+5		while(A[j] != and j > 0)
+6			A[j] = 0
+7			j--
+8		A[j] = 1
+9		for k = 1 to n do
+10			if (A[k] = 1) then
+11				tempValue = tempValue + Values[k]
+12				tempWeight = tempWeight + Weights[k]
+13		if ((tempValue > bestValue) AND (tempWeight <= Capacity)) then
+14			bestValue = tempValue
+15			best Weight = tempWeight
+16		bestChoice = A
+17	return bestChoice
